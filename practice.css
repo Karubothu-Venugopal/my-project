@@ -115,3 +115,18 @@ body {
   width: 200px;
   height: 300px;
 }
+
+.parent4 {
+  background: #000;
+  width: 500px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child4 {
+  color: #fff;
+}
