@@ -3,6 +3,79 @@
   padding: 0;
 }
 
+  .div {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    background-color: red;
+    transition-property: all;
+    transition-duration: 0.25s;/* or transition: all 0.5s will help to do every thing in a singlr go*/
+  }
+
+  .div:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: blue;
+    transform: rotate3d(180deg);
+  }
+
+  .box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin-left: 20px;
+    animation: 10s abc infinite;
+    animation-delay: 0.25s;
+  }
+
+  @keyframes abc {
+    30% {
+      background-color: red;
+      margin-left: 500px;
+    }
+
+    80% {
+      margin-left: 500px;
+      background-color: black;
+      transform: rotate(45deg);
+    }
+  }
+
+
+
+  a:link {
+    color: green;
+  }
+
+  a:active {
+    color: blue;
+  }
+
+  a:visited {
+    color: yellow;
+  }
+
+  a:hover {
+    color: orange;
+  }
+
+.container p:nth-child(even){
+  color: purple;
+}
+
+.para::after {
+  content: "hello";
+  background: red;
+  color: #fff;
+}
+
+.para::before {
+  content: "world";
+  background: green;
+  color: #fff;
+}
+
 .my-style {
   background-color: #35589A;
   color: #370665;
